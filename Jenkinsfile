@@ -43,7 +43,6 @@ pipeline {
           }          
           when {
             beforeAgent true
-            beforeInput true
             environment name: 'FAVORITE_COLOR', value: 'BLUE'
           }
           input {
