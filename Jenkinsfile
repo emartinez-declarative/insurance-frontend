@@ -42,7 +42,6 @@ pipeline {
             SERVICE_CREDS = credentials('example-service-username-password')
           }          
           when {
-            beforeAgent true
             environment name: 'FAVORITE_COLOR', value: 'BLUE'
           }
           input {
